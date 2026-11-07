@@ -17,7 +17,7 @@
 #include <linux/string.h>
 #include <linux/version.h>
 #include <linux/workqueue.h>
-#include "../android/binder_internal.h"
+#include "binder_internal.h"
 
 static unsigned long (*k_kallsyms_lookup_name)(const char* name);
 static void (*k_binder_transaction_buffer_release)(struct binder_proc* proc, struct binder_thread* thread, struct binder_buffer* buffer, binder_size_t off_end_offset, bool is_failure);

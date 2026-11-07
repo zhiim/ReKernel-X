@@ -15,7 +15,7 @@
 #include <linux/uaccess.h>
 #include <linux/string.h>
 #include <trace/hooks/binder.h>
-#include "../android/binder_internal.h"
+#include "binder_internal.h"
 
 #if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 6, 0))
 static void rkx_binder_alloc_new_buf_locked_vh(void *data, size_t size, size_t *free_async_space, int is_async, bool *should_fail)

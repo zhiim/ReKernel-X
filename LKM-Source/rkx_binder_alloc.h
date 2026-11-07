@@ -3,7 +3,7 @@
 
 #include <linux/types.h>
 #include <linux/version.h>
-#include "../android/binder_internal.h"
+#include "binder_internal.h"
 
 #if LINUX_VERSION_CODE < KERNEL_VERSION(6, 0, 0)
 int rk_binder_alloc_copy_from_buffer(struct binder_alloc *alloc, void *dest,
